@@ -43,6 +43,10 @@ export const Content = styled.div`
 
     width: 350px;
 
+   > img {
+      width: 250px;
+    }
+
     img {
       @media (max-width: 650px) {
         margin-top: 20px;
@@ -75,7 +79,7 @@ export const Content = styled.div`
        
       }
 
-      margin: 64px 0 32px;
+      margin: 25px 0 32px;
       font-size: 3.2rem;
     }
 
@@ -106,7 +110,7 @@ export const Content = styled.div`
     }
 
      margin-top: 10px;
-     background:#B22222;
+     background:#007CF5;
      border-radius: 4px;
      border: 0;
      color: #eee;

@@ -25,7 +25,7 @@ export default function NewIncident () {
       const schema = Yup.object().shape({
         title: Yup.string().required('Campo obrigatório'),
         description: Yup.string().required('Campo obrigatório'),
-        value: Yup.string(),
+        value: Yup.string()
       })
 
       await schema.validate({ file, title, description, value }, {

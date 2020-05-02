@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Content } from './styles'
-import logoImg from '../../assets/logo.svg'
+import logoImg from '../../assets/logo.png'
 import { FiArrowLeft } from 'react-icons/fi'
 import { teste } from '../../services/api'
 import { AiOutlineLoading } from 'react-icons/ai'
@@ -94,7 +94,7 @@ export default function Register () {
 
           <PhoneInput
             name="whatsapp"
-            placeholder="(00) 0 0000 0000" /> 
+            placeholder="(00) 0 0000 0000" />
 
           <span>
             <div id="city">

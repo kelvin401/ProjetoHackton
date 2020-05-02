@@ -8,6 +8,16 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  #logo {
+    width: 100%;
+    /* height: 300px; */
+  }
+
+ > img { 
+   width: 500px;
+   border: 0;
+ }
  
 
   @media (max-width: 650px) {       
@@ -67,7 +77,7 @@ form {
       padding: 10px;
     }    
  
-  margin-top: 100px;
+  margin-top: 10px;
 
   a {
     display: flex;   
@@ -77,6 +87,7 @@ form {
     font-size: 1.5rem;
     text-decoration: none; 
     transition: opacity 0.2s;
+    
   }
 
   input {
@@ -93,7 +104,7 @@ form {
     margin-top: 15px;
     padding: 10px 0;
     border: 0;
-    background: #B22222;
+    background: #007DF5;
     width: 100%;
 
 
