@@ -60,7 +60,7 @@ export default function Register () {
           <img src={logoImg} alt="Be the hero" />
 
           <h1>Cadastro</h1>
-          <p>Faça seu cadastro, entre na plataforma e ajude pessoas a encontrarem os casos da sua ONG.</p>
+          <p>Faça seu cadastro, entre na plataforma e encontre o evento perfeito para você</p>
 
           <Link to="/">
             <FiArrowLeft size={15} color="#E02841" />
@@ -71,7 +71,7 @@ export default function Register () {
         <Form ref={formRef} onSubmit={handleSubmit} >
           <Input
             name="name"
-            placeholder="Nome da Ong*"
+            placeholder="Nome do produtor*"
           />
 
           <Input

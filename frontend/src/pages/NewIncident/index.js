@@ -83,7 +83,7 @@ export default function NewIncident () {
           </label>
 
           <Input
-            placeholder="Título do caso"
+            placeholder="Título do Evento"
             name="title"
           />
 
