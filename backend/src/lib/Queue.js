@@ -1,8 +1,9 @@
 import Bee from 'bee-queue'
 import RegisterOng from '../app/jobs/RegisterOng'
+import RegisterUser from '../app/jobs/RegisterUser'
 import RecoverPassword from '../app/jobs/RecoverPassword'
 
-const jobs = [RegisterOng, RecoverPassword]
+const jobs = [RegisterOng, RegisterUser, RecoverPassword]
 
 class Queue {
   constructor () {

@@ -1,5 +1,5 @@
 import Token from '../models/Token'
-import Ong from '../models/Ong'
+import Ong from '../models/Ong' 
 
 class AuthenticationController {
   async store(req, res){

@@ -2,11 +2,12 @@ import { Sequelize } from 'sequelize'
 import databaseConfig from '../config/database'
 
 import Ong from '../app/models/Ong'
+import User from '../app/models/User'
 import Incident from '../app/models/Incident'
 import File from '../app/models/File' 
 import Token from '../app/models/Token' 
 
-const models = [Ong, Incident, File, Token]
+const models = [Ong, User, Incident, File, Token]
 
 class Database {
   constructor () {

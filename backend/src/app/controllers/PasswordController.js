@@ -32,8 +32,6 @@ class PasswordController {
     const { code, password, confirmPassword } = req.body
 
     const ong = await Ong.findOne({ where: { email }})  
-
-  
     
     if(code !== ong.reset_password_token) {
       return res.status(400).json({ error: 'Solicitação invalida'})
