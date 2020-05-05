@@ -5,7 +5,7 @@ import { signUpSuccess, signUpFailure } from './actions'
 
 export function * store ({ payload }) {
   try {
-    yield call(api.post, 'ongs', { ...payload })
+    yield call(api.post, 'producers', { ...payload })
 
     yield put(signUpSuccess())
     history.push('/message')

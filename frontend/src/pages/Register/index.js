@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Content } from './styles'
-import logoImg from '../../assets/logo.svg'
+import logoImg from '../../assets/logo.png'
 import { FiArrowLeft } from 'react-icons/fi'
 import { teste } from '../../services/api'
 import { AiOutlineLoading } from 'react-icons/ai'
@@ -60,7 +60,7 @@ export default function Register () {
           <img src={logoImg} alt="Be the hero" />
 
           <h1>Cadastro</h1>
-          <p>Faça seu cadastro, entre na plataforma e ajude pessoas a encontrarem os casos da sua ONG.</p>
+          <p>Faça seu cadastro, entre na plataforma e encontre o evento perfeito para você</p>
 
           <Link to="/">
             <FiArrowLeft size={15} color="#E02841" />
@@ -71,7 +71,7 @@ export default function Register () {
         <Form ref={formRef} onSubmit={handleSubmit} >
           <Input
             name="name"
-            placeholder="Nome da Ong*"
+            placeholder="Nome do produtor*"
           />
 
           <Input
@@ -94,7 +94,7 @@ export default function Register () {
 
           <PhoneInput
             name="whatsapp"
-            placeholder="(00) 0 0000 0000" /> 
+            placeholder="(00) 0 0000 0000" />
 
           <span>
             <div id="city">

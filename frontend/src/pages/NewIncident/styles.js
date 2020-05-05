@@ -114,7 +114,7 @@ export const Content = styled.div`
   margin-top: 15px;
   padding: 10px 0;
   border: 0;
-  background: #B22222;
+  background: #007CF5;
   width: 100%;
 
   svg {
