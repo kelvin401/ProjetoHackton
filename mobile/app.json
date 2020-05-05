@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Be the Hero",
+    "name": "EvenLar",
     "slug": "mobil",
     "privacy": "public",
     "sdkVersion": "36.0.0",
@@ -15,7 +15,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#e02041"
+      "backgroundColor": "#292929"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
