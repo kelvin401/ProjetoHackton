@@ -14,7 +14,7 @@ export default function Message () {
           <p>Enviamos um e-mail com um link para liberar seu acesso no site.</p>
 
           <Link to="/">
-            <FiArrowLeft size={15} color="#E02841" />
+            <FiArrowLeft size={15} color="#007CF5" />
             Voltar para login
           </Link>
         </section>

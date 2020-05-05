@@ -35,7 +35,7 @@ export default function UpdateModal ({ data, open, close }) {
             {url !== null ? <img src={url} alt="file" /> : (
               <div>
                 <MdAddAPhoto />
-                <p>Alterar foto do caso</p>
+                <p>Alterar foto do evento</p>
               </div>
             ) }
 

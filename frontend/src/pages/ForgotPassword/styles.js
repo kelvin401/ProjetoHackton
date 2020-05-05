@@ -8,6 +8,12 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  > img {
+  width: 500px;
+  border: 0;
+}
+
  
 
   @media (max-width: 650px) {       
@@ -48,6 +54,7 @@ a {
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.2s;
+    margin-bottom: 10px;
 
     svg {
       margin-right: 8px;
@@ -71,7 +78,7 @@ form {
       line-height: 26px;
     }    
  
-  margin-top: 100px;
+  margin-top: 20px;
 
   input {
     margin-top: 10px;
@@ -87,7 +94,7 @@ form {
     margin-top: 15px;
     padding: 10px 0;
     border: 0;
-    background: #B22222;
+    background: #007DF5;
     width: 100%;
 
     svg {

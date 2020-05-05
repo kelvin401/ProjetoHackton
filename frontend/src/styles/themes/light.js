@@ -1,10 +1,10 @@
 export default {
   header: {
     background: '#FFFFFF',
-    text: '#1C1C1C'
+    text: '#007CF5'
   },
   background: '#f0f0f5',
-  welcomeMsg: '#1C1C1C',
+  welcomeMsg: '#007CF5',
   h1: '#777777',
   inputColor: '#FFFFFF',
   text: '#000000',
@@ -21,6 +21,6 @@ export default {
     background: '#FFFFFF',
     paragraph: '#000000',
     paragraphBg: '#EEEEEE',
-    strong: '#1C1C1C'
+    strong: '#007CF5'
   }
 }

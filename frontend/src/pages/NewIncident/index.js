@@ -25,7 +25,7 @@ export default function NewIncident () {
       const schema = Yup.object().shape({
         title: Yup.string().required('Campo obrigatório'),
         description: Yup.string().required('Campo obrigatório'),
-        value: Yup.string(),
+        value: Yup.string()
       })
 
       await schema.validate({ file, title, description, value }, {
@@ -83,7 +83,7 @@ export default function NewIncident () {
           </label>
 
           <Input
-            placeholder="Título do caso"
+            placeholder="Título do Evento"
             name="title"
           />
 
