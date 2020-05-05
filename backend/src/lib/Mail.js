@@ -10,7 +10,7 @@ class Mail {
       service: 'SendGrid',   
       auth: {
         user: 'pegn.hackton@gmail.com',
-        pass: 'pegn2020'
+        pass: ''
       }
     })
     this.configureTemplate()
