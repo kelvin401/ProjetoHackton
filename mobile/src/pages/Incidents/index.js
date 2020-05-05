@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native'
 import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
-import logoImg from '../../assets/logo.png'
+import logoImg from '../../assets/logo8.png'
 import api from '../../services/api'
 
 export default function Incidents() {
@@ -46,11 +46,11 @@ export default function Incidents() {
       <View style={styles.header}>
         <Image source={logoImg} />
         <Text style={styles.headerText}>
-          Total de <Text style={styles.headerTextBold}>{total} casos</Text>          
+          Total de <Text style={styles.headerTextBold}>{total} eventos</Text>          
         </Text>
       </View>
       <Text style={styles.title}>Bem-vindo</Text>
-      <Text style={styles.description}>Escolha um dos casos abaixo e salve o dia</Text>
+      <Text style={styles.description}>Eventos recomendados para você</Text>
 
       <FlatList
       data={incidents}
@@ -61,11 +61,12 @@ export default function Incidents() {
       keyExtractor={incident => String(incident.id)}
       renderItem={ ({ item: incident}) => (
         <View style={styles.incident}>
-        <Text style={styles.incidentProperty}>ONG:</Text>
-        <Text style={styles.incidentValue}>{incident.name}</Text>
-
-        <Text style={styles.incidentProperty}>CASO:</Text>
+        <Image style={styles.image}>{incident.upload}</Image>
+        <Text style={styles.incidentProperty}>REALIZAÇÃO:</Text>
         <Text style={styles.incidentValue}>{incident.title}</Text>
+
+        <Text style={styles.incidentProperty}>EVENTO:</Text>
+        <Text style={styles.incidentValue}>{incident.description}</Text>
 
         <Text style={styles.incidentProperty}>VALOR:</Text>
         <Text style={styles.incidentValue}>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(incident.value)}</Text>
@@ -74,7 +75,7 @@ export default function Incidents() {
           style={styles.detailsButton}
           onPress={() => navigateToDetail(incident)}>
             <Text style={styles.detailsButtonText}>Ver mais detalhes</Text>
-            <Feather name="arrow-right" size={16} color="#E02041" />
+            <Feather name="arrow-right" size={16} color="#fff" />
           </TouchableOpacity>
       
       </View>

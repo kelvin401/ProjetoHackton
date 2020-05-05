@@ -4,6 +4,7 @@ import Constants from 'expo-constants'
 export default StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#292929',
     paddingHorizontal: 24,
     paddingTop: Constants.statusBarHeight + 20
   },
@@ -15,7 +16,7 @@ export default StyleSheet.create({
   },
 
   incident: {
-    padding: 24,
+    padding: 14,
     borderRadius: 8,
     backgroundColor: '#FFF',
     marginBottom: 16,
@@ -36,7 +37,7 @@ export default StyleSheet.create({
   },
 
   contactBox: {
-    padding: 24,
+    padding: 14,
     borderRadius: 8,
     backgroundColor: '#FFF',
     marginBottom: 16,   
@@ -45,8 +46,16 @@ export default StyleSheet.create({
   heroTitle: {
     fontWeight: 'bold',
     fontSize: 28,
+    textAlign: 'center',
+    bottom: 10,
     color: '#13131b',
     lineHeight: 38
+  },
+  heroTitle1: {
+    fontWeight: 'bold',
+    fontSize: 14,
+    color: '#13131b',
+    lineHeight: 18
   },
 
   heroDescription: {
@@ -62,7 +71,7 @@ export default StyleSheet.create({
   },
 
   action: {
-    backgroundColor: '#e02041',
+    backgroundColor: '#007DF5',
     borderRadius: 8,
     height: 50,
     width: '48%',
